@@ -1,0 +1,223 @@
+vra catalog request submit --id d6473436-5856-470f-b361-adadf894ac63 --groupid 79be261a-6df3-43d2-8862-953c528c625d --reason test --inputfile C:\Users\k01677\createVM.json 
+
+vra catalog request submit --id d6473436-5856-470f-b361-adadf894ac63 --groupid 79be261a-6df3-43d2-8862-953c528c625d --reason test --inputfile /home/CloudClient/createVM.json 
+
+Docker file  
+
+vra catalog request submit --id d6473436-5856-470f-b361-adadf894ac63 --groupid 79be261a-6df3-43d2-8862-953c528c625d --reason test --inputfile /home/vcloudclient/bin/createVM.json 
+
+
+
+
+
+Aaa.json file content 
+
+ 
+
+ 
+
+ 
+
+{ 
+
+  "catalogItemId" : "d6473436-5856-470f-b361-adadf894ac63", 
+
+  "requestedFor" : null, 
+
+  "businessGroupId" : "79be261a-6df3-43d2-8862-953c528c625d", 
+
+  "description" : null, 
+
+  "reasons" : "development", 
+
+  "data" : { 
+
+    "Windows2016" : { 
+
+      "componentTypeId" : "com.vmware.csp.component.cafe.composition", 
+
+      "componentId" : null, 
+
+      "classId" : "Blueprint.Component.Declaration", 
+
+      "typeFilter" : "Windows2016*Windows2016", 
+
+      "data" : { 
+
+        "Extensibility.Lifecycle.Properties.VMPSMasterWorkflow32.Buildingmachine" : "*", 
+
+        "Extensibility.Lifecycle.Properties.VMPSMasterWorkflow32.DeactivateMachine" : "*", 
+
+        "Extensibility.Lifecycle.Properties.VMPSMasterWorkflow32.Disposing" : "*", 
+
+        "Extensibility.Lifecycle.Properties.VMPSMasterWorkflow32.MachineActivated" : "*", 
+
+        "Extensibility.Lifecycle.Properties.VMPSMasterWorkflow32.MachineProvisioned" : "*", 
+
+        "Extensibility.Lifecycle.Properties.VMPSMasterWorkflow32.MachineProvisioned.PRE" : "Extensibility.States.*", 
+
+        "Extensibility.Lifecycle.Properties.VMPSMasterWorkflow32.RegisterMachine" : "*", 
+
+        "Extensibility.Lifecycle.Properties.VMPSMasterWorkflow32.Requested" : "*", 
+
+        "Extensibility.Lifecycle.Properties.VMPSMasterWorkflow32.UnprovisionMachine" : "*", 
+
+        "Extensibility.Lifecycle.Properties.VMPSMasterWorkflow32.WaitingToBuild" : "*", 
+
+        "ExternalWFStubs.MachineProvisioned" : "712f2f72-701d-459a-84f5-4bbec0cbd5cc", 
+
+        "Infoblox.IPAM.Network0.aliases" : "", 
+
+        "Infoblox.IPAM.Network0.comment" : "", 
+
+        "Infoblox.IPAM.Network0.dnsView" : "", 
+
+        "Infoblox.IPAM.Network0.enableDhcp" : "FALSE", 
+
+        "Infoblox.IPAM.Network0.enableDns" : "FALSE", 
+
+        "Infoblox.IPAM.Network0.msDhcpServer" : "", 
+
+        "Infoblox.IPAM.createAddressAndPtrRecords" : "FALSE", 
+
+        "Infoblox.IPAM.createAddressRecord" : "FALSE", 
+
+        "Infoblox.IPAM.createFixedAddress" : "FALSE", 
+
+        "Infoblox.IPAM.createHostRecord" : "TRUE", 
+
+        "Infoblox.IPAM.createReservation" : "FALSE", 
+
+        "Infoblox.IPAM.enableCustomHostname" : "TRUE", 
+
+        "Infoblox.IPAM.restartIfNeeded" : "FALSE", 
+
+        "_cluster" : 1, 
+
+        "_hasChildren" : false, 
+
+        "cpu" : 2, 
+
+        "datacenter_location" : null, 
+
+        "description" : null, 
+
+        "disks" : [ { 
+
+          "componentTypeId" : "com.vmware.csp.iaas.blueprint.service", 
+
+          "componentId" : null, 
+
+          "classId" : "Infrastructure.Compute.Machine.MachineDisk", 
+
+          "typeFilter" : null, 
+
+          "data" : { 
+
+            "capacity" : 100, 
+
+            "custom_properties" : null, 
+
+            "id" : 1569421558053, 
+
+            "initial_location" : "", 
+
+            "is_clone" : true, 
+
+            "label" : "Hard disk 1", 
+
+            "storage_reservation_policy" : "", 
+
+            "userCreated" : false, 
+
+            "volumeId" : 0 
+
+          } 
+
+        } ], 
+
+        "display_location" : false, 
+
+        "guest_customization_specification" : "Windows 2016 Workload", 
+
+        "machine_prefix" : null, 
+
+        "max_network_adapters" : -1, 
+
+        "max_per_user" : 0, 
+
+        "max_volumes" : 60, 
+
+        "memory" : 2048, 
+
+        "ovfAuthNeeded" : false, 
+
+        "ovf_proxy_endpoint" : null, 
+
+        "ovf_url" : null, 
+
+        "ovf_url_pwd" : null, 
+
+        "ovf_url_username" : null, 
+
+        "ovf_use_proxy" : false, 
+
+        "reservation_policy" : null, 
+
+        "rsas.cmdb.ciType" : "computer", 
+
+        "rsas.cmdb.description" : "Windows VM running in SDDC", 
+
+        "rsas.cmdb.projectcode" : "123456", 
+
+        "rsas.cmdb.purpose" : "Virtual workload", 
+
+        "rsas.cmdb.targetEnvironmentType" : "TEST", 
+
+    "rsas.patchwindow.day":"Saturday", 
+
+        "rsas.drsgroup.windows" : "Windows VMs", 
+
+    "Windows2016~rsas.environment": "Test", 
+
+        "rsas.environment" : "Test", 
+
+    "Windows2016~rsas.patchwindow.day": "Saturday", 
+
+    "Windows2016~rsas.patchwindow.windowstime": "0100-0400", 
+
+        "rsas.patchwindow.windowstime" : "0100-0400", 
+
+        "rsas.rubrik.sla" : "Unprotected", 
+
+        "rsas.tags.OperatingSystem" : "Windows 2016", 
+
+        "rsas.tier" : "Tier0", 
+
+        "rsas.vmname" : "Tesst", 
+
+        "security_groups" : [ ], 
+
+        "security_tags" : [ ], 
+
+        "size" : "ValueSet.Small", 
+
+        "snapshot_name" : null, 
+
+        "storage" : 100 
+
+      } 
+
+    }, 
+
+    "_leaseDays" : null, 
+
+    "_number_of_instances" : 1 
+
+  }, 
+
+  "type" : "com.vmware.vcac.catalog.domain.request.CatalogItemProvisioningRequest" 
+
+} 
+
+ 
